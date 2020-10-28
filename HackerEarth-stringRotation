@@ -1,0 +1,27 @@
+
+no_testcase=int(input())
+sizeandstep=input()
+step=int(sizeandstep.split()[1])
+size=int(sizeandstep.split()[0])
+
+#print(size)
+#print(step)
+fullarray=input()
+arr=fullarray.split()
+#print(arr)
+farr=arr
+
+for i in range(0,size):              
+    if((i-step)<0):                               
+        newpos=(5+(i-step))
+    else:
+        newpos=(i-step)
+    farr[newpos]=arr[i]
+
+                                        
+
+print(farr)
+
+
+
+#not out putting correct result
